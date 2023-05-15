@@ -17,13 +17,15 @@ import { TextSectionComponent } from './text-section/text-section.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { CounterComponent } from './counter/counter.component';
+import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
   declarations: [AsideComponent, HeaderComponent, FooterComponent, SubscribeComponent, InstagramComponent, DonorsComponent, BlogsComponent, PromoComponent, AboutComponent, IconsComponent, CausesComponent, ProjectsComponent, EventsComponent, TextSectionComponent, TestimonialComponent, MainMenuComponent, CounterComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports:[AsideComponent, HeaderComponent, FooterComponent, SubscribeComponent, InstagramComponent, DonorsComponent, BlogsComponent, PromoComponent, AboutComponent, IconsComponent, CausesComponent, ProjectsComponent, EventsComponent, TextSectionComponent,TestimonialComponent]
 })
